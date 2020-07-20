@@ -1,0 +1,57 @@
+{
+  "name": "mern-list-share",
+  "version": "1.0.0",
+  "description": "A web app to create and share various lists.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\" ",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run bıild --prefix client"
+  },
+  "engines": {
+    "node": "12.14.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ugurctaygun/mern-list-share.git"
+  },
+  "author": "uct",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ugurctaygun/mern-list-share/issues"
+  },
+  "homepage": "https://github.com/ugurctaygun/mern-list-share#readme",
+  "dependencies": {
+    "@material-ui/lab": "^4.0.0-alpha.54",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^5.2.0",
+    "config": "^3.3.1",
+    "core-util-is": "^1.0.2",
+    "dotenv": "^8.2.0",
+    "draft-js": "^0.11.5",
+    "draft-js-export-html": "^1.4.1",
+    "express": "^4.17.1",
+    "express-validator": "^6.4.1",
+    "gravatar": "^1.8.0",
+    "html-react-parser": "^0.10.5",
+    "immer": "^6.0.9",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.26.0",
+    "mongoose": "^5.9.11",
+    "nodemon": "^2.0.3",
+    "react-moment": "^0.9.7",
+    "react-redux": "^7.2.0",
+    "react-slick": "^0.26.1",
+    "react-swipeable-views": "^0.13.9",
+    "redux": "^4.0.5",
+    "serve": "^11.3.2",
+    "slick-carousel": "^1.8.1",
+    "uuid": "^8.1.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.3"
+  }
+}
