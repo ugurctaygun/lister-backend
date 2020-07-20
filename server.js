@@ -3,6 +3,7 @@ require("dotenv").config();
 const connectDB = require("./config/db");
 //Libraries
 const express = require("express");
+const cors = require("cors");
 const path = require("path");
 
 const app = express();
@@ -15,8 +16,9 @@ app.use(
     extended: false,
   })
 );
+app.use(cors());
 
-app.use("/api/users", require("./routes/api/users"));
+app.use("/api/users", require("./routes/api/Users"));
 app.use("/api/auth", require("./routes/api/auth"));
 app.use("/api/lists", require("./routes/api/lists"));
 
