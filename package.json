@@ -5,10 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server",
-    "server": "nodemon server.js",
-    "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\" ",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run bıild --prefix client"
+    "server": "nodemon server.js"
   },
   "engines": {
     "node": "12.14.0"
@@ -19,10 +16,6 @@
   },
   "author": "uct",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ugurctaygun/mern-list-share/issues"
-  },
-  "homepage": "https://github.com/ugurctaygun/mern-list-share#readme",
   "dependencies": {
     "@material-ui/lab": "^4.0.0-alpha.54",
     "bcryptjs": "^2.4.3",
