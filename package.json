@@ -32,7 +32,7 @@
     "html-react-parser": "^0.10.5",
     "immer": "^6.0.9",
     "jsonwebtoken": "^8.5.1",
-    "moment": "^2.26.0",
+    "moment": "^2.29.2",
     "mongoose": "^5.9.11",
     "nodemon": "^2.0.3",
     "react-moment": "^0.9.7",
