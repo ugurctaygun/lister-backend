@@ -31,7 +31,7 @@
     "gravatar": "^1.8.0",
     "html-react-parser": "^0.10.5",
     "immer": "^6.0.9",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "moment": "^2.26.0",
     "mongoose": "^5.9.11",
     "nodemon": "^2.0.3",
